@@ -1,5 +1,5 @@
 #Downloads
-curl -s -o login.sh -L "https://raw.githubusercontent.com/JohnnyNetsec/github-vm/main/mac/login.sh"
+curl -s -o login.sh -L "https://raw.githubusercontent.com/mehul-finbyz/github-vm/refs/heads/main/mac/login.sh"
 #disable spotlight indexing
 sudo mdutil -i off -a
 #Create new account
@@ -24,4 +24,4 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 brew install --cask ngrok
 #configure ngrok and start it
 ngrok authtoken $1
-ngrok tcp 5900 --region=in &
+ngrok http 5900 --region=in &
